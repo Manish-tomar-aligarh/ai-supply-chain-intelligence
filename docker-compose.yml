@@ -1,0 +1,15 @@
+services:
+
+  backend:
+    build:
+      context: ./backend
+    container_name: supplymind-backend
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: supplymind-frontend
+    ports:
+      - "3000:3000"
